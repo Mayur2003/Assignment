@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form 2</title>
+</head>
+<style>
+	html{
+		margin: 0 auto;
+	}
+</style>
+<body>
+
+	<h1> <font color="red" size="7" face="cooper"> Student regisration Form</font>  </h1>
+	<form>
+	<table>
+		<tr>
+			<td> First Name</td>
+			<td><input type="text" placeholder="first name" maxlength="50" pattern="^[A-z]{1,50}"></td>
+		</tr>
+
+		<tr>
+			<td> Last Name :-</td>
+			<td> <input type="text" placeholder="last name" maxlength="50" pattern="^[A-z]{1,50}"></td>
+		</tr>
+
+		<tr>
+			<td>E-Mail ID :-</td>
+			<td> <input type="email" placeholder="email" maxlength="50" pattern="^[A-z0-9@-_.]{1,50}"></td>
+		</tr>
+
+		<tr>
+			<td> MObile Number :-</td>
+			<td> <input type="text" placeholder="mobile number"  maxlength="10" pattern="^[0-9]{10}"></td>
+		</tr>
+
+		<tr>
+			<td> Gender :-</td>
+			<td> <input type="radio" placeholder="radio" checked> Male
+				<input type="radio" placeholder="radio" > Female</td>
+		</tr>
+
+		<tr>
+			<td>Date Of Birth(D.O.B) :- </td>
+			<td> <input type="date"></td>
+		</tr>
+
+		<tr>
+			<td>Address :-</td>
+			<td> <textarea> </textarea></td>
+		</tr>
+
+		<tr>
+			<td>City</td>
+			<td><input type="text" placeholder="city" maxlength="50" pattern="^[A-z]{1,50}"></td>
+		</tr>
+
+		<tr>
+			<td> Pin code</td>
+			<td><input type="text" placeholder="zip code" size="33" maxlength="6" pattern="^[0-9]{6}"></td>
+		</tr>
+
+		<tr>
+			<td> State :-</td>
+			<td><input type="text" placeholder="city" maxlength="50" pattern="^[A-z]{1,50}"></td>
+		</tr>
+
+		<tr>
+			<td>Country</td>
+			<td><input type="text" placeholder="country" maxlength="50" pattern="^[A-z]{1,50}"></td>
+		</tr>
+
+		<tr>
+			<td> Hobbies :- </td>
+			<td> <input type="checkbox"> Drawing <input type="checkbox"> Singing <input type="checkbox"> Dancing <input type="checkbox"> Sketing <br> <input type="checkbox"> Others <input type="text" placeholder="Ex-Teaching" pattern="^[A-z]{0,50}"> </td>
+		</tr>
+
+		<tr>
+			<td>Qualification :- </td>
+			<td> <input type="checkbox"> High School(10th) <br>
+				<input type="checkbox">Higher School(12th) <br>
+				<input type="checkbox">Graduation(bachelors)<br>
+				<input type="checkbox">Posr Graduation (Masters)<br>
+				<input type="checkbox">phd</td><br>
+		</tr>
+
+		<tr> 
+			<td><br> <br> Couse Application :-</td>
+			<td> <input type="radio" name="mk">Bachelor Of Computer Application <br>
+				<input type="radio" name="mk">B.Com Bachelor Of Commerce <br>
+				 <input type="radio" name="mk">B.Sc Bachelor of Science <br>
+				  <input type="radio" name="mk"> B.A Bachelor of Arts <br>
+				   <input type="radio" name="mk">MCA MAster Of Computer Application <br>
+				    <input type="radio" name="mk">M.Com Master OF Compter Application <br>
+				     <input type="radio" name="mk"> M.Sc Master of Science <br>
+				      <input type="radio" name="mk">M.A Master Of Science
+			</td>
+		</tr>
+		<tr>
+			<td> <input type="submit" value="submit" > </td>
+			<td> <input type="reset" name=" Reset "> </td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
