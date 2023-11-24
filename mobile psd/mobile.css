@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#navlink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4%;
+    position: relative;
+}
+
+#navlink p{
+    font-size: 18px;
+    font-weight: 850;
+}
+
+#navlink summary{
+    font-size: 36px;
+}
+
+#navlink details{
+    position: absolute;
+    right: 6%;
+}
+
+#navlink ul{
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    padding-inline: 81%;
+}
+
+
+
+#navlink li{
+    margin-block: 21%;
+    color: whitesmoke;
+    font-weight: 912;
+  }
+  #navlink+div{
+    text-align: center;
+    margin-top: 12.9%;
+  }
+  h1{
+    width: 54%;
+    margin-inline: auto;
+  }
+  h1+p{
+    width: 81%;
+    line-height: 1.29;
+    margin-inline: auto;
+    text-align: justify;
+  }
+  #navlink+div *{
+    margin-top: 4.5%;
+  }
+  #navlink+div>a{
+    width: 72%;
+    padding-block: 3%;
+    margin-inline: auto;
+    display: block;
+    color: white;
+    border-radius: 0.5625rem;
+    background-color: rgb(120, 43, 213);
+  }
+  h1+p+input{
+    width: 72%;
+    border: 1px solid grey;
+    padding-block: 3%;
+    border-radius: 0.5625rem
+    ;
+  }
+  h1+p+input::placeholder{
+    text-align: center;
+  }
+  #navlink+div :first-child{
+    background-color: rgb(190, 249, 190);
+    width:fit-content;
+    margin-inline: auto;
+    padding: 2.1%;
+    border-radius: 1.25rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  #sec1,#timeline{
+    padding: 12.9% 2.1%;
+  }
+  #sec1>img{
+    width: 100%;
+  }
+  #sec1 h2{
+    font-size: 1.125rem;
+    margin-top: 18%;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+  #sec1 div img{
+    width: 18%;
+    vertical-align: middle;
+    margin-left: 4%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #survey{
+    text-align: center;
+    padding: 2.1% 1.5%;
+    background-color: rgba(155, 150, 150, 0.121);
+  }
+  
+  #survey div{
+    padding: 9% 2.1%;
+    border-bottom: 1px solid grey;
+  }
+  #survey>:first-child{
+    border-bottom: 9px solid rgb(120, 43, 213);
+  }
+  #survey p{
+    margin-top: 3%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #work,#worked,#customer{
+    padding: 6% 9%;
+    text-align: center;
+  }
+  #work img{
+    width: 18%;
+    border-radius: 50%;
+  }
+  #work h3{
+    font-size: 1.8125rem;
+  }
+  #work p{
+    font-size: 1.1875rem;
+  }
+  #work img,#work a{
+    margin-top: 21%;
+    background-color: rgba(128, 0, 128, 0.183);
+  }
+  #work a{
+    display: block;
+    padding: 6%;
+    font-size: 1.3125rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  #worked h3,#worked p,#worked a{
+    display: block;
+    font-size: 1.8125rem;
+    margin-top: 15.6%;
+  }
+  #worked a{
+    background-color: rgb(120, 43, 213);
+    color: white;
+    padding: 6%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #customer img{
+      width: 27%;
+      border-radius: 50%;
+  }
+  #customer img,#customer>h4+p{
+    margin-top: 18%;
+    font-size: 1.6875rem;
+  
+  }
+  #customer h4{
+    font-size: 1.6875rem;
+    width: 63%;
+    margin-inline: auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  #emp{
+    padding: 8.1% 5%;
+    text-align: center;
+    font-size: 2.4375rem;
+    color: white;
+    background-color: rgb(120, 43, 213);
+  }
+  #emp>img{
+    text-align: center;
+      width: 39%;
+      display: block;
+      margin-inline: auto;
+      margin-top: 9%;
+      border-radius: 0.5625rem;
+  }
+  
+  
+  
+  
+  
+  
+  footer{
+    padding: 9%;
+    background-color: rgb(29, 40, 48);
+    color: whitesmoke;
+    font-size: 2.0625rem;
+  }
+  footer h6{
+    margin-bottom: 9%;
+  }
+  
+  footer p{
+     font-size: 1.1875rem;
+     margin-top: 9%;
+  }
+  footer img{
+    width: 39%;
+    display: block;
+    margin-bottom: 6%;
+  }
+  
