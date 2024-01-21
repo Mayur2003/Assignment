@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		background-color: black;
+		color: yellow;
+	}
+
+	table{
+		margin: 0 auto;
+		margin-top: 10%;
+	}
+
+	table td{
+        padding-top: 6%;
+    }
+
+	#fn,#ln{
+		font-size: 30px;
+		
+
+	}
+
+	#j,#k{
+		width: 160%;
+		margin-left: 20%;
+		padding: 10px 15px;		
+	}
+
+	#j,#k,::-webkit-input-placeholder{
+		font-size: 15px;
+		color: antiquewhite;
+		
+	}
+
+	#op,#po,#ty,#yt{
+		font-size: 30px;
+		padding: 10px 20px;
+		border-radius: 15px;
+		background-color: crimson;
+		color: aqua;
+		
+	}
+
+	#op{
+		margin-left: 40%;
+		margin-top: 3%;
+	}
+
+	#po,#ty,#yt{
+		margin-left: 3%;
+	}
+
+	#hj,#jh{
+		margin-left: 20%;
+		font-size: 20px;
+		
+	}
+
+</style>
+<script type="text/javascript">
+	function mayur()
+{
+		var x=document.getElementById('j').value;
+		var y=document.getElementById('k').value;
+		
+
+		var addition = parseInt(x) + parseInt(y);
+
+				
+
+		document.write("your Addision is:- "+addition);
+		
+}
+	function ma(){
+		var x=document.getElementById('j').value;
+		var y=document.getElementById('k').value;
+		
+
+		var sub = parseInt(x) - parseInt(y);
+		document.write("Your Substraction is:- " + sub);
+	}
+
+	function kl(){
+
+		var x=document.getElementById('j').value;
+		var y=document.getElementById('k').value;
+		
+
+		var mul = parseInt(x) * parseInt(y);
+		document.write("Your Multiplication is:- " + mul);
+	 
+	}
+
+	function lk()
+	{
+		var x=document.getElementById('j').value;
+		var y=document.getElementById('k').value;
+		
+
+		var div = parseInt(x) / parseInt(y);
+		document.write("Your Division is:- " + div);
+	}
+
+	function er(mayur,jeet,keyur)
+
+	{
+		var ui = document.getElementById('j').value;
+		console.log(ui);
+
+		if(ui == "")
+		{
+			document.getElementById(jeet).innerText = 'Please Enter ' + keyur; 
+		}
+	}
+
+</script>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td id="fn">Enter A First Number :- </td>
+				<td> <input type="Number" id="j" placeholder="Enter A First Number " onblur="er(this,'hj','first number')">
+				<span id="hj"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td id="ln">Enter A Second Number :- </td>
+				<td> <input type="number" id="k" placeholder="Enter A Second Number" onblur="er(this,'jh','second number')">
+				<span id="jh"></span>
+				</td>
+			</tr>
+			
+
+			
+		</table>
+
+		<input type="button" value="+" onclick="mayur()" id="op">
+		<input type="button" value="-" onclick="ma()" id="po">
+		<input type="button" value="*" onclick="kl()" id="ty">
+		<input type="button" value="/" onclick="lk()" id="yt">
+
+		<input type="reset" value="reset" >
+	</form>
+
+
+
+</body>
+</html>

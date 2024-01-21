@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript marksheet</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        /* outline:  1px solid green; */
+    }
+    body{
+        background-color: black;
+        color: greenyellow;
+        
+    }
+
+    table{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        padding-top: 3%;
+        
+    }
+    form{
+        text-align: center;
+        
+    }
+    table td{
+        padding-top: 5%;
+        font-size: 25px;
+    }
+
+    #re{
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: red;
+        color: aqua;
+        font-size: 20px;
+        
+    }
+
+    td p{
+        font-size: 18px;
+    }
+
+    #html , #css, #javascript, #Python , #c , #rust , #php{
+        margin-left: 12%;
+        padding: 5px 10px;
+    }
+
+    #html , #css, #javascript, #Python , #c , #rust , #php, ::-webkit-input-placeholder{
+        color: black;
+        font-weight: 700;
+    }
+
+    #gh{
+        color: aliceblue;
+        font-size: 15px;
+    }
+  
+    
+</style>
+<script>
+    function marks()
+    {
+        let a = Number(document.getElementById('html').value);
+        let b = Number(document.getElementById('css').value);
+        let c = Number(document.getElementById('javascript').value);
+        let d = Number(document.getElementById('Python').value);
+        let e = Number(document.getElementById('c').value);
+        let f = Number(document.getElementById('rust').value);
+        let g = Number(document.getElementById('php').value);
+
+        let ty = a + b + c + d + e + f + g;
+
+        if(ty <= 350 && ty >= 0)
+        {
+            
+            document.getElementById('mo').innerHTML = ty;
+            document.getElementById('mo').style.fontSize = '15px';
+            document.getElementById('mo').style.color = "crimson";
+
+            document.getElementById("mo2").innerHTML = ty / 7 * 2;
+            document.getElementById('mo2').style.color = "crimson";
+            document.getElementById("mo2").style.fontSize = "15px";
+        }
+
+        else 
+        {
+            alert('Not Possible , Total Marks Must Be Between 0 And 350');
+        }
+    }
+
+    function io(mayur, vinit , keyur)
+
+    {
+        var yu = document.getElementById('html').value;
+        console.log(yu);
+
+        if(yu == "")
+        {
+            document.getElementById(vinit).innerText = 'Please Enter Your ' + keyur;
+        }
+    }
+</script>
+<body>
+
+
+    <form action="">
+
+        <table>
+            <tr>
+                <td>Html :- </td>
+                <td><input type="text" id="html" name="html" placeholder="Enter Your Marks" onblur="io(this,'gh','html marks ')">
+                <span id="gh"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Css :- </td>
+                <td>
+                    <input type="text" id="css" name="css" placeholder="Enter Your Marks">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Javascript :- </td>
+                <td><input type="text" name="javascript" id="javascript" placeholder="Enter Your Marks"></td>
+            </tr>
+
+            <tr>
+                <td>Python :- </td>
+                <td><input type="text" name="Python" id="Python" placeholder="Enter Your Marks"></td>
+            </tr>
+
+            <tr>
+                <td>C Language :- </td>
+                <td><input type="text" id="c" name="c" placeholder="Enter Your Marks"></td>
+            </tr>
+
+            <tr>
+                <td>Rust :- </td>
+                <td><input type="text" name="rust" id="rust" placeholder="Enter Your Marks"></td>
+            </tr>
+
+            <tr>
+                <td>Php :- </td>
+                <td><input type="text" name="php" id="php" placeholder="Enter Your Marks"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button type="button" id="re" onclick="marks()">Result</button>
+                </td>
+            </tr>
+        
+            <tr>
+                <td colspan="2">
+                    <p>Total is :  <b id="mo"></b> / 200</p>
+                    <p>Percentage Is : <b id="mo2"></b>  %</p>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    
+    
+</body>
+</html>
