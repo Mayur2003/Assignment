@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Assesment</title>
+</head>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color-scheme: dark;
+      /* outline: 1px solid red; */
+      color: aqua;
+      list-style-type: none;
+    }
+
+
+    div{
+      width: 25%;
+      display: flex;
+      justify-content: space-between;
+      margin-inline: auto;
+      margin-block: 1.2rem;
+    }
+
+      .may{
+        position: relative;
+      }
+    summary+div{
+      width: 60%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: -65%;
+      top: -100%;
+      border: 2px solid white;
+      box-shadow: 0px 0px 36px 21px red;
+      background-color: grey;
+      
+
+    }
+
+    summary+div>p{
+      padding: 0.4rem 2rem;
+      color: greenyellow;
+    }
+
+
+  </style>
+<body>
+
+  <script>
+    function moj()
+    {
+       var hj = document.getElementById('und');
+       var jh = document.getElementById('mnd');
+       var nm = document.getElementById('end');
+       var mn = document.getElementById('nnd');
+       var as = document.getElementById('tnd');
+       var sa = document.getElementById('snd');
+       
+       hj.style.display='none';
+       jh.style.display='none';
+       nm.style.display='none';
+       mn.style.display='none';
+       as.style.display='none';
+       sa.style.display='none';
+      
+
+    }
+
+    function jkl()
+    {
+      var hj = document.getElementById('und');
+       var jh = document.getElementById('mnd');
+       var nm = document.getElementById('end');
+       var mn = document.getElementById('nnd');
+       var as = document.getElementById('tnd');
+       var sa = document.getElementById('snd');
+
+       hj.style.display='none';
+       jh.style.display='none';
+       nm.style.display='none';
+       mn.style.display='none';
+       as.style.display='none';
+
+       sa.style.display='block';
+       
+      
+    }
+
+    function iop(){
+      var hj = document.getElementById('und');
+       var jh = document.getElementById('mnd');
+       var nm = document.getElementById('end');
+       var mn = document.getElementById('nnd');
+       var sa = document.getElementById('snd');
+
+       var as = document.getElementById('tnd');
+       
+
+       hj.style.display='none';
+       jh.style.display='none';
+       nm.style.display='none';
+       mn.style.display='none';
+       sa.style.display='none';
+       as.style.display='block';
+      
+    }
+  </script>
+  <div class="may">
+    
+    <label for="chb">Choice Of Booking  :- </label>
+    <details>
+      <summary>Booking Options</summary>
+      <div>
+      <p onclick="moj()">Full Day Booking</p>
+      <p onclick="jkl()">Half Day Booking</p>
+      <p onclick="iop()">Hourly Booking</p>
+      </div>
+    </details>
+  </div>
+
+  <div id="und">
+      <label for="Un"> User Name :- </label>
+      <input type="text" id="un" name="un">
+  </div>
+  <div id="mnd">
+      <label for="Mobile Number">Mobile Number :- </label>
+      <input type="number" id="mn" name="mn">
+  </div>
+  <div id="end">
+      <label for="ee">E-mail :-</label>
+      <input type="email" id="ee" name="ee">
+  </div>
+  <div id="nnd">
+      <label for="Nop">No Of Person :-</label>
+      <input type="number" id="nop" name="nop">
+  </div>
+  <div>
+      <label for="da">Date :-</label>
+      <input type="date" id="dd" name="dd">
+  </div>
+  <div id="tnd">
+      <label for="tt">Time</label>
+      <input type="time" id="tt" name="tt">
+  </div>
+  <div id="snd">
+    <label for="slot">Slot :-</label>
+    <details>
+      <summary>Slot Options</summary>
+      <p>Breakfast</p>
+      <p>Lunch</p>
+      <p>Dinner</p>
+    </details>
+
+  </div>
+  
+</body>
+</html>

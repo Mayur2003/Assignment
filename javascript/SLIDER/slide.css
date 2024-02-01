@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 60%;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    margin: 6% auto; 
+    overflow: hidden;
+}
+
+.slider{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mian button{
+    text-align: center;
+    padding: 10px 15px;
+}
+.mian{
+    text-align: center;
+    margin-top: 10px;
+}
