@@ -1,0 +1,47 @@
+.nr img{
+    height: 10vh;
+}
+
+.nr{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nr h2{
+    font-size: 15px;
+}
+
+.nr span{
+    font-size: 10px;
+}
+
+.nr h5{
+    color: orangered;
+    background-color: aliceblue;
+}
+
+.ryu{
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 1px solid black;
+ 
+}
+
+.ryu h1{
+    margin-left: 6%;
+    font-size: 32px;
+}
+
+.ryu h4{
+    font-size: 18px ;
+}
+
+.ryu span{
+    font-size: 12px;
+    font-weight: 400
+}
+
+.kl{
+    margin-left: 2%;
+}
